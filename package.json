@@ -1,0 +1,17 @@
+{
+  "name": "@agent.so/hasura",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compose": "docker compose up -d",
+    "reset": "doppler run --command 'hasura metadata apply'",
+    "reload": "doppler run --command 'hasura metadata reload'",
+    "dev": "doppler run --command 'pnpm compose && hasura console'",
+    "secrets-production": "ssh root@159.223.29.30 'cd /root/hasura && doppler secrets download --no-file --format env > .env'",
+    "secrets-staging": "ssh root@159.223.29.30 'cd /root/hasura-staging && doppler secrets download --no-file --format env > .env'"
+  },
+  "devDependencies": {
+    "hasura-cli": "^2.36.1"
+  },
+  "packageManager": "pnpm@8.14.3+sha512.c3ed80eb583be3e2b7ef31eb96b8b9cfaa0503e5d44ec717514120b5187b2f933736e9038c51a5a23ad582790ba41d4ab784618c89fa7e2365f6665685d612ee"
+}
