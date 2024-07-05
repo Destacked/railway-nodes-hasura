@@ -10,8 +10,6 @@ tags:
 
 This example sets up a [Hasura](https://hasura.io/opensource/) instance with a [PostgreSQL](https://www.postgresql.org/) database.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/hasura)
-
 ## ✨ Features
 
 - Postgres
@@ -19,7 +17,6 @@ This example sets up a [Hasura](https://hasura.io/opensource/) instance with a [
 
 ## 💁‍♀️ How to use
 
-- Click the `Deploy on Railway` button
 - Set up a `HASURA_GRAPHQL_ADMIN_SECRET` to secure your endpoints and console.
 - Visit your console after the deployment is complete
 
