@@ -31,8 +31,8 @@ ENV DESTACKED_SECRET_KEY=$DESTACKED_SECRET_KEY
 CMD graphql-engine \
     --database-url $DATABASE_URL \
     serve \
-    --server-port $PORT
-
+    --server-port $PORT \
+    --enable-persisted-queries
 
 ## Comment the command above and use the command below to
 ## enable an access-key and an auth-hook
