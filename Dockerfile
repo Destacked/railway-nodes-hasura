@@ -1,4 +1,4 @@
-FROM hasura/graphql-engine:v2.40.0
+FROM hasura/graphql-engine:v2.45.1
 
 # External Services
 ENV STRAPI_API_URL=$STRAPI_API_URL
@@ -32,6 +32,7 @@ CMD graphql-engine \
     --database-url $DATABASE_URL \
     serve \
     --server-port $PORT
+
 
 ## Comment the command above and use the command below to
 ## enable an access-key and an auth-hook
